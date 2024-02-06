@@ -25,4 +25,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: muneer2ishtech/nvm:1.0.0 muneer2ishtech/nvm:latest
+        tags: muneer2ishtech/nvm:1.0.0,muneer2ishtech/nvm:latest
