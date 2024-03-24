@@ -11,6 +11,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # Install apt packages
 RUN apt-get update -y
 RUN apt-get install -y wget
+RUN apt-get install -y sudo
 
 # Add user "nvm" as non-root user
 RUN useradd -ms /bin/bash nvm
