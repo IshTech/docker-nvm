@@ -11,12 +11,14 @@ ENV DEBIAN_FRONTEND noninteractive
 # Install apt packages
 RUN apt-get update -y
 RUN apt-get install -y wget
+RUN apt-get install -y sudo
 
 # Add user "nvm" as non-root user
 RUN useradd -ms /bin/bash nvm
 
 # Copy and set permission for nvm directory
-#RUN chown nvm:nvm -R "/home/nvm/.nvm"
+RUN mkdir -p /home/nvm/.nvm
+RUN chown nvm:nvm -R "/home/nvm/.nvm"
 
 # Set sudoer for "nvm"
 RUN echo 'nvm ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers

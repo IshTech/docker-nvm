@@ -1,8 +1,13 @@
-# NVM Docker based on Ubuntu 22.04
+# NVM Docker based on Ubuntu
 
-See [NVM GitHub](https://github.com/nvm-sh/nvm)
+NVM Docker based on Ubuntu latest LTS
 
-## Get
+Built on Ubuntu 22.04
+
+- See [NVM GitHub](https://github.com/nvm-sh/nvm)
+- See [GitHub of this Docker](https://github.com/IshTech/docker-nvm)
+
+## Get docker image
 ```
 docker pull muneer2ishtech/nvm
 ```
